@@ -1,7 +1,7 @@
 /**
  * Created by Artemas on 21/02/2017.
  */
-public class ByteShortInt {
+public class _03_ByteShortInt {
 
     public static void main(String[] args) {
 
@@ -93,7 +93,7 @@ public class ByteShortInt {
          */
         long myLongMinValue = -9_223_372_036_854_775_808L;
         long myLongMaxValue = 9_223_372_036_854_775_807L;
-        
+
     }
 
 }

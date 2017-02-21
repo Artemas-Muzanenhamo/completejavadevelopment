@@ -1,4 +1,4 @@
-public class Main {
+public class _01_Main {
 
     /**
      * In this program you just have to run

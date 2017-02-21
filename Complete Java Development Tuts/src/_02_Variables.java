@@ -1,7 +1,7 @@
 /**
  * Created by Artemas on 21/02/2017.
  */
-public class Variables {
+public class _02_Variables {
 
     public static void main(String[] args){
 
