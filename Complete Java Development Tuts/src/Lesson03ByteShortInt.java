@@ -1,7 +1,7 @@
 /**
  * Created by Artemas on 21/02/2017.
  */
-public class _03_ByteShortInt {
+public class Lesson03ByteShortInt {
 
     public static void main(String[] args) {
 
