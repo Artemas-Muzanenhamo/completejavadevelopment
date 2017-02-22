@@ -1,4 +1,4 @@
-package src;
+package variable_datatypes_operators;
 
 /**
  * Created by amuzanenhamo on 22/02/2017.

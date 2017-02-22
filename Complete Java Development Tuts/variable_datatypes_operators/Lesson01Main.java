@@ -1,4 +1,4 @@
-package src;
+package variable_datatypes_operators;
 
 public class Lesson01Main {
 
