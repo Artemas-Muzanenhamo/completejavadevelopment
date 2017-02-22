@@ -5,6 +5,46 @@ public class Lesson01_KeywordsAndExpressions {
 	public static void main(String[] args) {
 		
 	/**
+	 * Here is a list of keywords in the Java programming language. 
+	 * You cannot use any of the following as identifiers in your programs. 
+	 * The keywords const and goto are reserved, even though they are not 
+	 * currently used. true, false, and null might seem like keywords, 
+	 * but they are actually literals; you cannot use them as identifiers 
+	 * in your programs.
+	 * 
+	 * abstract   default   if           package     synchronized
+	 * assert     do        implements   private     this
+	 * boolean    double    import       protected   throw
+	 * break      else      instanceof   public      throws
+	 * byte       extends   int          return      transient
+	 * case       false     interface    short       true
+	 * catch      final     long         static      try
+	 * char       finally   native       strictfp    void
+	 * class      float     new          super       volatile
+	 * const      for       null         switch      while
+	 * continue   goto
+	 * 
+	 * 
+	 * Although const and goto are reserved words, they are not currently 
+	 * part of the Java language. The above list is reasonably typical of 
+	 * the Java keyword lists you will see in textbooks, though some contain a 
+	 * more extensive list, which may include some, or all, of the following 
+	 * keywords (or even additional ones). These keywords, like const and goto, 
+	 * are not currently part of the language, but are "reserved for future use":
+	 * byvalue
+	 * cast
+	 * future
+	 * generic
+	 * inner
+	 * operator
+	 * outer
+	 * rest
+	 * var
+	 * volatile
+	 * The reserved word assert is new as of Java 1.4.
+	 */
+		
+	/**
 	 * An expression is a construct made up of variables, 
 	 * operators, and method invocations, which are constructed 
 	 * according to the syntax of the language, that evaluates 
