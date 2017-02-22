@@ -1,4 +1,4 @@
-package variable_datatypes_operators;
+package topic1_variable_datatypes_operators;
 
 /**
  * Created by Artemas on 21/02/2017.

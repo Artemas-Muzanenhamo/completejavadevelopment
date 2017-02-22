@@ -1,4 +1,4 @@
-package variable_datatypes_operators;
+package topic1_variable_datatypes_operators;
 
 public class Lesson05CharAndBoolean {
 	
