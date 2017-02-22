@@ -1,3 +1,5 @@
+package src;
+
 /**
  * Created by Artemas on 21/02/2017.
  */
@@ -62,6 +64,25 @@ public class Lesson03ByteShortInt {
         byte myByteMaxValue = 127;
 
         /**
+         * Using what we learnt from variables we can also perform
+         * calculations with values of our byte data type as below.
+         */
+        byte myByteValue = 10;
+
+        /**
+         * However, when you decide to perform an expression in Java
+         * between data types of numbers, Java always defaults to `int`.
+         * In this case we will get an error if we tried to divide
+         * out byte value by two because the Java will try and default
+         * the outcome to an integer type. And this is why in Java
+         * using `int` is always best because it avoids us Casting.
+         */
+        //myByteMaxValue = (myByteValue/2); <- Returns: 'Incompatible Types: Required: "byte" but found "int" '
+        //To avoid the error we either have to change the data type to int or we can cast the outcome to match the req data type
+        myByteMaxValue = (byte) (myByteValue/2);
+        System.out.println(myByteValue);
+
+        /**
          * Short - The short data type is a 16-bit signed two's
          * complement integer. It has a minimum value of -32,768
          * and a maximum value of 32,767 (inclusive).
@@ -78,6 +99,11 @@ public class Lesson03ByteShortInt {
         short myShortMinValue = -32768;
         short myShortMaxValue = 32767;
 
+        short myShortValue = 10;
+
+        myShortValue = (short) (myShortValue/2);
+        System.out.println(myShortValue);
+
         /**
          * Long - The long data type is a 64-bit two's complement integer.
          * The signed long has a minimum value of -263 and a maximum value
@@ -93,6 +119,11 @@ public class Lesson03ByteShortInt {
          */
         long myLongMinValue = -9_223_372_036_854_775_808L;
         long myLongMaxValue = 9_223_372_036_854_775_807L;
+
+        long myLongValue = 9_223_372_036_854_775_807L;
+
+        myLongValue = myLongValue;
+        System.out.println(myLongValue);
 
     }
 
