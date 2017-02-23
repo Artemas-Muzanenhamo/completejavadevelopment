@@ -46,6 +46,14 @@ public class Lesson06_MethodOverloading {
      * type of the arguments passed into the method. In the code 
      * sample, draw(String s) and draw(int i) are distinct and 
      * unique methods because they require different argument types.
+     * 
+     * You cannot declare more than one method with the same name and 
+     * the same number and type of arguments, because the compiler 
+     * cannot tell them apart.
+     * 
+     * The compiler does not consider return type when differentiating
+     *  methods, so you cannot declare two methods with the same 
+     *  signature even if they have a different return type.
      */
 
 }
