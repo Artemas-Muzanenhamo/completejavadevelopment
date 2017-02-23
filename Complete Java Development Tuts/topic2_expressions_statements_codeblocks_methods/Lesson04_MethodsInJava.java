@@ -82,3 +82,124 @@ public class Lesson04_MethodsInJava {
 	}
 
 }
+
+class MethodPassing{
+	
+	/**
+	 * Following our Class {@link Lesson04_MethodsInJava}
+	 * We would want to use our method to perform 
+	 * the calculation of the finalScore.  
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		/**
+		 * 1) 
+		 * 
+		 * Firstly, we wouldn't need to perform the check here.
+		 * So we would want our method `calculateScore()` handle that
+		 * Secondly, we will want our method to somehow take the values
+		 * of our variables and calculate them. To achieve this we will
+		 * do what is called `passing` values or variables. 
+		 * 
+		 * Currently our method is defined as:
+		 * 
+		 * calculateScore();
+		 * 
+		 * the empty brackets symbolize that there will be no values or variables
+		 * that will be passed in which are named as parameters.
+		 * 
+		 * So we would want our method to have method parameters that include:
+		 * 
+		 * gameOver
+		 * score
+		 * levelCompleted
+		 * bonus
+		 * 
+		 */
+		
+		/**
+		 * 3) 
+		 * 
+		 * To call our `calculateScore()` method we would call it as below:
+		 */
+		calculateScore(true, 800, 5, 100);
+		
+		/**
+		 * For our second player, we would just need to pass in the values in the
+		 * calculateScore() method and it should also work as expected and this time,
+		 * it should return the correct amount since the method we are now calling has
+		 * the `finalScore` being added with a 1000.
+		 */
+		calculateScore(true, 10000, 8, 200);
+		
+	}
+	
+	/**
+	 * 2) 
+	 * 
+	 * Method will allow you to create parameters as below
+	 */
+	public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
+		
+		if(gameOver){
+			int finalScore = score + (levelCompleted * bonus);
+			finalScore += 1000;
+			System.out.println("Your final score was: " + finalScore);
+		}
+		
+	}
+
+	
+}
+
+class MethodReturn{
+	
+	/**
+	 * Following our Class {@link MethodPassing}
+	 * We would want to use our method to perform 
+	 * the calculation of the finalScore AND then
+	 * return the value back to our code in the 
+	 * `main` method.  
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		calculateScore(true, 800, 5, 100);
+		
+		calculateScore(true, 10000, 8, 200);
+		
+	}
+	
+	/**
+	 * 1) 
+	 * 
+	 * If we wanted our method to return value back into our main method
+	 * we would need to change what is called the `method return type`.
+	 * The keyword `void` in our method for calculateScore() is a method
+	 * return type which basically means that nothing (void) will be returned.
+	 * Method return types can be nothing or can return values back of a 
+	 * specified data type. So our primitive data types can be valid return
+	 * types for our method. 
+	 * 
+	 * @param gameOver
+	 * @param score
+	 * @param levelCompleted
+	 * @param bonus
+	 */
+	public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus){
+		
+		if(gameOver){
+			int finalScore = score + (levelCompleted * bonus);
+			finalScore += 1000;
+			System.out.println("Your final score was: " + finalScore);
+			return finalScore;
+		}
+		
+		return -1;
+		
+	}
+
+	
+}
