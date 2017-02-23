@@ -74,6 +74,9 @@ public class Lesson04_MethodsInJava {
 		
 		/**
 		 * This method can be called in the `main` method as calculateScore()
+		 * The purpose of Methods is to eliminate repetition in code blocks
+		 * and allow you to pass information without the need of hard coding
+		 * values all the time. 
 		 */
 		
 	}
